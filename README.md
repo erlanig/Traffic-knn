@@ -6,7 +6,7 @@
 
 | NIM            | Name                    |
 | -------------- | ----------------------- |
-| 24060121130166 | Mahardika Putra Wardana |
+| 24060121130076 | Mahardika Putra Wardana |
 | 24060121140166 | Erlan Irhab Ghalib      |
 | 24060121140130 | Kamal Ariq              |
 | 24060121140110 | Mulya Irwansyah         |
