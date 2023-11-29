@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORT ICON -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../static/images/icon.ico"
+    />
+
+    <!-- IMPORT CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      select:required:invalid {
+        color: rgb(172, 172, 172);
+      }
+      option {
+        color: black;
+      }
+    </style>
+    <title>Result | Traffic Prediction</title>
+  </head>
+  <body class="font-mono bg-gray-300 text">
+    <div class="container mx-auto">
+      <div class="flex justify-center px-6 my-12">
+        <div
+          class="md:w-1/2 bg-white rounded shadow-xl ring-1 ring-gray-900/5 px-10"
+        >
+          <div class="mb-4 text-center text-xl">
+            Based on your input, we predict that the traffic is
+            <strong class="text-2xl">{{ prediction }}</strong> .
+          </div>
+
+          <div class="mb-4 text-center">
+            <a
+              href="/form"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >Retry</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

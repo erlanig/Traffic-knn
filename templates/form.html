@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORT ICON -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../static/images/icon.ico"
+    />
+
+    <!-- IMPORT CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      select:required:invalid {
+        color: rgb(172, 172, 172);
+      }
+      option {
+        color: black;
+      }
+    </style>
+    <title>Form | Traffic Prediction</title>
+  </head>
+  <body class="font-mono bg-gray-300 text">
+    <div class="container mx-auto">
+      <div class="flex justify-center px-6 my-12">
+        <div
+          class="md:w-1/2 bg-white rounded shadow-xl ring-1 ring-gray-900/5 px-10"
+        >
+          <a href="/"><button class="font-bold underline mt-4">Back</button></a>
+          <div class="text-center mt-3 text-2xl font-bold">INPUT FORM</div>
+          <form class="block mt-3" action="/result" method="POST">
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="day">
+                Day
+              </label>
+              <select
+                required
+                id="day"
+                name="day"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              >
+                <option value="" disabled selected hidden>
+                  Select Day
+                </option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="time">
+                Time
+              </label>
+              <input
+                type="time"
+                id="time"
+                name="time"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="car">
+                Car Count
+              </label>
+              <input
+                required
+                type="number"
+                id="car"
+                name="car"
+                class="shadow appearance-none border rounded w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="bike">
+                Bike Count
+              </label>
+              <input
+                required
+                type="number"
+                id="bike"
+                name="bike"
+                class="shadow appearance-none border rounded w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="bus">
+                Bus Count
+              </label>
+              <input
+                required
+                type="number"
+                id="bus"
+                name="bus"
+                class="shadow appearance-none border rounded w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="truck">
+                Truck Count
+              </label>
+              <input
+                required
+                type="number"
+                id="truck"
+                name="truck"
+                class="shadow appearance-none border rounded w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="mb-4 text-center">
+              <input
+                type="submit"
+                value="submit"
+                class="hover:bg-transparent bg-blue-500 hover:text-blue-700 font-semibold text-white py-2 px-4 border hover:border-blue-500 border-transparent rounded-full"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
